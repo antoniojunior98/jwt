@@ -1,0 +1,29 @@
+JWT
+
+header.payload.signature
+
+HEADER
+{
+  "typ":"JWT",
+  "alg":"HS256"
+}
+
+PAYLOAD
+{
+  "iss":"dominio do site",
+  "exp":15115,
+  "iat":1514584,
+  "jti":"1515165grngur62652",
+  "id_user":1,
+  "privada":"nfnufejne541fefmner",
+}
+SIGNATURE
+{
+   sha256,
+   BASE64url = header,
+   BASE64url = payload,
+   KEY
+}
+BASE64url = signature
+
+jwt = header.payload.signature
